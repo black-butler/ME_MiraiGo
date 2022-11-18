@@ -3,9 +3,9 @@ package client
 import (
 	"github.com/pkg/errors"
 
-	"github.com/Mrs4s/MiraiGo/binary/jce"
-	"github.com/Mrs4s/MiraiGo/client/internal/auth"
-	"github.com/Mrs4s/MiraiGo/message"
+	"github.com/black-butler/ME_MiraiGo/binary/jce"
+	"github.com/black-butler/ME_MiraiGo/client/internal/auth"
+	"github.com/black-butler/ME_MiraiGo/message"
 )
 
 var (

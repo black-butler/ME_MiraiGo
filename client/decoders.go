@@ -11,19 +11,19 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/Mrs4s/MiraiGo/binary"
-	"github.com/Mrs4s/MiraiGo/binary/jce"
-	"github.com/Mrs4s/MiraiGo/client/internal/auth"
-	"github.com/Mrs4s/MiraiGo/client/internal/network"
-	"github.com/Mrs4s/MiraiGo/client/pb"
-	"github.com/Mrs4s/MiraiGo/client/pb/cmd0x352"
-	"github.com/Mrs4s/MiraiGo/client/pb/cmd0x6ff"
-	"github.com/Mrs4s/MiraiGo/client/pb/msg"
-	"github.com/Mrs4s/MiraiGo/client/pb/oidb"
-	"github.com/Mrs4s/MiraiGo/client/pb/profilecard"
-	"github.com/Mrs4s/MiraiGo/client/pb/structmsg"
-	"github.com/Mrs4s/MiraiGo/internal/proto"
-	"github.com/Mrs4s/MiraiGo/utils"
+	"github.com/black-butler/ME_MiraiGo/binary"
+	"github.com/black-butler/ME_MiraiGo/binary/jce"
+	"github.com/black-butler/ME_MiraiGo/client/internal/auth"
+	"github.com/black-butler/ME_MiraiGo/client/internal/network"
+	"github.com/black-butler/ME_MiraiGo/client/pb"
+	"github.com/black-butler/ME_MiraiGo/client/pb/cmd0x352"
+	"github.com/black-butler/ME_MiraiGo/client/pb/cmd0x6ff"
+	"github.com/black-butler/ME_MiraiGo/client/pb/msg"
+	"github.com/black-butler/ME_MiraiGo/client/pb/oidb"
+	"github.com/black-butler/ME_MiraiGo/client/pb/profilecard"
+	"github.com/black-butler/ME_MiraiGo/client/pb/structmsg"
+	"github.com/black-butler/ME_MiraiGo/internal/proto"
+	"github.com/black-butler/ME_MiraiGo/utils"
 )
 
 var (
@@ -297,9 +297,9 @@ func decodeTransEmpResponse(c *QQClient, _ *network.IncomingPacketInfo, payload 
 		}
 		c.deviceInfo.TgtgtKey = m[0x1e]
 		return &QRCodeLoginResponse{State: QRCodeConfirmed, LoginInfo: &QRCodeLoginInfo{
-			tmpPwd:      m[0x18],
-			tmpNoPicSig: m[0x19],
-			tgtQR:       m[0x65],
+			TmpPwd:      m[0x18],
+			TmpNoPicSig: m[0x19],
+			TgtQR:       m[0x65],
 		}}, nil
 	}
 	return nil, errors.Errorf("unknown trans_emp response: %v", cmd)

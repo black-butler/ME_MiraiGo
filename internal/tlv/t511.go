@@ -1,7 +1,7 @@
 package tlv
 
 import (
-	"github.com/Mrs4s/MiraiGo/binary"
+	"github.com/black-butler/ME_MiraiGo/binary"
 )
 
 func T511(domains []string) []byte {

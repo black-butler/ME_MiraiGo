@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/Mrs4s/MiraiGo/binary"
-	"github.com/Mrs4s/MiraiGo/client/internal/auth"
+	"github.com/black-butler/ME_MiraiGo/binary"
+	"github.com/black-butler/ME_MiraiGo/client/internal/auth"
 )
 
 // Transport is a network transport.

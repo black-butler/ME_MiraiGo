@@ -4,7 +4,7 @@ import (
 	goBinary "encoding/binary"
 	"math"
 
-	"github.com/Mrs4s/MiraiGo/utils"
+	"github.com/black-butler/ME_MiraiGo/utils"
 )
 
 type JceReader struct {

@@ -1,8 +1,8 @@
 package client
 
 import (
-	"github.com/Mrs4s/MiraiGo/client/internal/network"
-	"github.com/Mrs4s/MiraiGo/client/internal/oicq"
+	"github.com/black-butler/ME_MiraiGo/client/internal/network"
+	"github.com/black-butler/ME_MiraiGo/client/internal/oicq"
 )
 
 //go:noinline

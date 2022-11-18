@@ -8,10 +8,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/Mrs4s/MiraiGo/client/internal/network"
-	"github.com/Mrs4s/MiraiGo/client/pb/channel"
-	"github.com/Mrs4s/MiraiGo/client/pb/msg"
-	"github.com/Mrs4s/MiraiGo/internal/proto"
+	"github.com/black-butler/ME_MiraiGo/client/internal/network"
+	"github.com/black-butler/ME_MiraiGo/client/pb/channel"
+	"github.com/black-butler/ME_MiraiGo/client/pb/msg"
+	"github.com/black-butler/ME_MiraiGo/internal/proto"
 )
 
 func init() {

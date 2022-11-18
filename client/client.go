@@ -3,6 +3,7 @@ package client
 import (
 	"crypto/md5"
 	"fmt"
+	"github.com/black-butler/ME_MiraiGo/client/pb/msg"
 	"math/rand"
 	"net"
 	"net/netip"
@@ -16,15 +17,14 @@ import (
 
 	"github.com/RomiChan/syncx"
 
-	"github.com/Mrs4s/MiraiGo/binary"
-	"github.com/Mrs4s/MiraiGo/client/internal/auth"
-	"github.com/Mrs4s/MiraiGo/client/internal/highway"
-	"github.com/Mrs4s/MiraiGo/client/internal/intern"
-	"github.com/Mrs4s/MiraiGo/client/internal/network"
-	"github.com/Mrs4s/MiraiGo/client/internal/oicq"
-	"github.com/Mrs4s/MiraiGo/client/pb/msg"
-	"github.com/Mrs4s/MiraiGo/message"
-	"github.com/Mrs4s/MiraiGo/utils"
+	"github.com/black-butler/ME_MiraiGo/binary"
+	"github.com/black-butler/ME_MiraiGo/client/internal/auth"
+	"github.com/black-butler/ME_MiraiGo/client/internal/highway"
+	"github.com/black-butler/ME_MiraiGo/client/internal/intern"
+	"github.com/black-butler/ME_MiraiGo/client/internal/network"
+	"github.com/black-butler/ME_MiraiGo/client/internal/oicq"
+	"github.com/black-butler/ME_MiraiGo/message"
+	"github.com/black-butler/ME_MiraiGo/utils"
 )
 
 type QQClient struct {
@@ -363,7 +363,7 @@ func (c *QQClient) QueryQRCodeStatus(sig []byte) (*QRCodeLoginResponse, error) {
 }
 
 func (c *QQClient) QRCodeLogin(info *QRCodeLoginInfo) (*LoginResponse, error) {
-	i, err := c.sendAndWait(c.buildQRCodeLoginPacket(info.tmpPwd, info.tmpNoPicSig, info.tgtQR))
+	i, err := c.sendAndWait(c.buildQRCodeLoginPacket(info.TmpPwd, info.TmpNoPicSig, info.TgtQR))
 	if err != nil {
 		return nil, errors.Wrap(err, "qrcode login error")
 	}

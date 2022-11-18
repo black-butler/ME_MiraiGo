@@ -6,7 +6,7 @@ import (
 	"runtime/debug"
 	"sync"
 
-	"github.com/Mrs4s/MiraiGo/message"
+	"github.com/black-butler/ME_MiraiGo/message"
 )
 
 // protected all EventHandle, since write is very rare, use

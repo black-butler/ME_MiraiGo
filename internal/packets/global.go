@@ -1,7 +1,7 @@
 package packets
 
 import (
-	"github.com/Mrs4s/MiraiGo/binary"
+	"github.com/black-butler/ME_MiraiGo/binary"
 )
 
 type IncomingPacket struct {

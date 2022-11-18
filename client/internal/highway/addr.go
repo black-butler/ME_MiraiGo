@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/Mrs4s/MiraiGo/binary"
+	"github.com/black-butler/ME_MiraiGo/binary"
 )
 
 type Addr struct {

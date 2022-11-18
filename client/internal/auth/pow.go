@@ -6,7 +6,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/Mrs4s/MiraiGo/binary"
+	"github.com/black-butler/ME_MiraiGo/binary"
 )
 
 func CalcPow(data []byte) []byte {
